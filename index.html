@@ -1,1 +1,458 @@
-https://dzsmfp-p0.myshopify.com/products/montres-de-luxe
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#147a43">
+<meta name="description" content="OUAGA SHOES — chaussures pour hommes au Burkina Faso. Commande simple et paiement à la livraison.">
+<title>OUAGA SHOES | L'élégance masculine</title>
+<style>
+:root{--black:#123524;--gold:#16834a;--cream:#eff7f1;--gray:#68766d;--line:#dce9df;--white:#fff;--green:#16834a}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--black);background:#fff}
+a{text-decoration:none;color:inherit}
+button,input,select,textarea{font:inherit}
+button{cursor:pointer}
+.announcement{background:#125c36;color:#eee;text-align:center;padding:10px 12px;font-size:11px;letter-spacing:.7px}
+.announcement strong{color:#e4c58e}
+header{position:sticky;top:0;background:#fff;z-index:20;border-bottom:1px solid var(--line)}
+.header{max-width:1200px;margin:auto;padding:16px 22px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{font-size:24px;font-weight:900;letter-spacing:2px;white-space:nowrap}
+.logo span{color:var(--gold)}
+nav{display:flex;gap:26px;font-size:12px;font-weight:bold;text-transform:uppercase;letter-spacing:.5px}
+nav a:hover{color:var(--gold)}
+.header-note{font-size:11px;color:var(--gray)}
+.hero{min-height:500px;background:linear-gradient(90deg,rgba(0,0,0,.83),rgba(0,0,0,.18)),url('https://images.unsplash.com/photo-1614252369475-531eba835eb1?auto=format&fit=crop&w=1900&q=85') center/cover;display:flex;align-items:center;color:#fff}
+.hero-content{max-width:1200px;width:100%;margin:auto;padding:55px 28px}
+.eyebrow{font-size:11px;letter-spacing:3px;color:var(--gold);font-weight:800;text-transform:uppercase}
+.hero h1{font-size:clamp(42px,7vw,76px);line-height:1.02;letter-spacing:-1.5px;margin:18px 0;max-width:700px}
+.hero p{max-width:450px;color:#eee;font-size:15px;line-height:1.8}
+.btn{display:inline-flex;justify-content:center;align-items:center;gap:8px;padding:14px 20px;border:0;background:var(--black);color:white;font-size:11px;font-weight:800;letter-spacing:.8px;text-transform:uppercase;border-radius:3px;transition:.2s}
+.btn:hover{opacity:.88;transform:translateY(-1px)}
+.btn-gold{background:var(--gold)}
+.btn-green{background:var(--green)}
+.hero .btn{margin-top:16px}
+.trust{max-width:1100px;margin:auto;padding:22px 15px;display:grid;grid-template-columns:repeat(3,1fr);gap:12px;border-bottom:1px solid var(--line)}
+.trust-item{display:flex;align-items:center;justify-content:center;gap:10px;font-size:11px;font-weight:800;text-align:center}
+.trust-icon{font-size:21px;color:var(--gold)}
+.section{max-width:1200px;margin:auto;padding:65px 22px}
+.heading{text-align:center;margin-bottom:30px}
+.heading h2{font-size:clamp(27px,4vw,36px);margin:10px 0}
+.heading p{color:var(--gray);font-size:13px;line-height:1.7}
+.filters{display:flex;justify-content:center;gap:9px;flex-wrap:wrap;margin:0 0 22px}
+.chip{border:1px solid var(--line);background:#fff;padding:10px 17px;border-radius:25px;font-size:11px;font-weight:700}
+.chip.active,.chip:hover{background:#16834a;color:#fff;border-color:#16834a}
+.catalog-tools{display:flex;justify-content:space-between;align-items:center;gap:12px;margin:0 0 20px}
+.search{width:min(330px,100%);padding:12px 14px;border:1px solid var(--line);border-radius:3px;outline:none;font-size:13px}
+.search:focus,.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--green)}
+#productCount{font-size:11px;color:var(--gray)}
+.products{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px}
+.card{min-width:0;background:#fff;border:1px solid #eee;border-radius:5px;overflow:hidden;transition:.2s}
+.card:hover{box-shadow:0 12px 30px #0000000d;transform:translateY(-3px)}
+.photo{position:relative;background:var(--cream);aspect-ratio:1/1.03;overflow:hidden}
+.photo img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s}
+.card:hover .photo img{transform:scale(1.04)}
+.badge{position:absolute;left:12px;top:12px;background:#fff;padding:7px 9px;font-size:9px;font-weight:900;letter-spacing:.7px}
+.info{padding:15px 14px 16px}
+.name{font-size:14px;font-weight:800;margin-bottom:6px}
+.category{font-size:10px;color:var(--gray);margin-bottom:9px}
+.price-row{display:flex;align-items:center;gap:8px;margin-bottom:13px}
+.price{font-size:15px;font-weight:900}
+.old{font-size:11px;color:#999;text-decoration:line-through}
+.product-actions{display:grid;grid-template-columns:1fr 1fr;gap:7px}
+.details-btn{width:100%;padding:13px 7px;background:#fff;color:var(--green);border:1px solid var(--green);font-size:10px}
+.details-btn:hover{background:#eff7f1}
+.buy-btn{width:100%;padding:13px 7px;font-size:10px}
+.payment-note{margin-top:10px;color:#777;font-size:10px;text-align:center}
+.promo{display:grid;grid-template-columns:1fr 1fr;background:var(--cream)}
+.promo-image{min-height:330px;background:url('https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1100&q=85') center/cover}
+.promo-text{padding:48px;display:flex;flex-direction:column;align-items:flex-start;justify-content:center}
+.promo-text h2{font-size:clamp(27px,4vw,39px);margin:12px 0}
+.promo-text p{font-size:13px;line-height:1.8;color:var(--gray);max-width:430px}
+.delivery{max-width:1100px;margin:55px auto;padding:0 22px}
+.delivery-box{background:#f8f6f1;border:1px solid var(--line);padding:25px;display:flex;align-items:center;justify-content:center;gap:18px;text-align:center}
+.delivery-box strong{display:block;margin-bottom:6px}
+.delivery-box p{margin:0;color:var(--gray);font-size:12px;line-height:1.6}
+footer{background:#111;color:white;padding:45px 22px 20px}
+.footer-inner{max-width:1200px;margin:auto;display:grid;grid-template-columns:2fr 1fr 1fr;gap:30px}
+footer h3{font-size:11px;letter-spacing:1px}
+footer p,footer a{font-size:12px;color:#aaa;line-height:2}
+.copyright{max-width:1200px;margin:25px auto 0;border-top:1px solid #333;padding-top:18px;color:#888;font-size:10px}
+.whatsapp-float{position:fixed;right:20px;bottom:20px;z-index:30;width:58px;height:58px;border-radius:50%;background:#20c765;color:white;display:flex;align-items:center;justify-content:center;box-shadow:0 5px 18px #0003}
+.whatsapp-float svg{width:31px;height:31px;fill:currentColor}
+.whatsapp-label{position:fixed;right:88px;bottom:34px;z-index:29;background:#fff;padding:10px 13px;border-radius:5px;box-shadow:0 3px 16px #0002;font-size:11px;font-weight:bold}
+.modal-bg{display:none;position:fixed;inset:0;background:#0009;z-index:60;align-items:center;justify-content:center;padding:16px}
+.modal-bg.show{display:flex}
+.modal{position:relative;background:#fff;width:min(790px,100%);max-height:94vh;overflow:auto;border-radius:7px}
+.modal-close{position:absolute;right:12px;top:10px;z-index:2;border:0;background:#fff;width:36px;height:36px;border-radius:50%;font-size:24px}
+.modal-grid{display:grid;grid-template-columns:1fr 1fr}
+.modal-grid>img{width:100%;height:100%;min-height:470px;object-fit:cover;background:var(--cream)}
+.order-form{padding:32px 28px}
+.order-form h2{font-size:25px;margin:8px 0}
+.product-summary{display:flex;justify-content:space-between;gap:12px;padding:12px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);font-size:12px;margin:15px 0}
+.field{margin:12px 0}
+.field label{display:block;font-size:11px;font-weight:800;margin-bottom:6px}
+.field input,.field select,.field textarea{width:100%;padding:12px;border:1px solid var(--line);border-radius:3px;outline:none;font-size:13px;background:white}
+.cod-note{background:#f4f1e9;padding:11px;font-size:11px;line-height:1.6;margin:15px 0;color:#514735}
+.form-error{font-size:11px;color:#b22;margin:8px 0;min-height:15px}
+@media(max-width:950px){.products{grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}}
+@media(max-width:650px){
+ .header{padding:13px 15px}
+ .logo{font-size:20px}
+ nav{gap:12px;font-size:9px}
+ .header-note{display:none}
+ .hero{min-height:440px;background-position:58% center}
+ .hero-content{padding:40px 20px}
+ .hero p{font-size:13px}
+ .trust{padding:17px 7px;gap:5px}
+ .trust-item{font-size:9px;flex-direction:column;gap:5px}
+ .trust-icon{font-size:18px}
+ .section{padding:48px 13px}
+ .heading h2{font-size:26px}
+ .catalog-tools{align-items:stretch;flex-direction:column}
+ .search{width:100%}
+ .products{grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}
+ .info{padding:11px 9px 12px}
+ .name{font-size:12px}
+ .price{font-size:13px}
+ .old{font-size:10px}
+ .details-btn,.buy-btn{font-size:9px;padding:12px 4px}
+ .promo{grid-template-columns:1fr}
+ .promo-image{min-height:230px}
+ .promo-text{padding:28px 22px}
+ .delivery{margin:35px auto;padding:0 13px}
+ .delivery-box{padding:19px 12px}
+ .footer-inner{grid-template-columns:1fr 1fr;gap:18px}
+ .footer-inner>div:first-child{grid-column:1/-1}
+ .modal-grid{grid-template-columns:1fr}
+ .modal-grid>img{height:210px;min-height:0}
+ .order-form{padding:23px 18px}
+ .whatsapp-float{width:54px;height:54px;right:14px;bottom:14px}
+ .whatsapp-label{display:none}
+}
+</style>
+</head>
+<body>
+
+<div class="announcement">OUAGA SHOES · LIVRAISON AU BURKINA FASO · <strong>PAIEMENT À LA LIVRAISON</strong></div>
+
+<header>
+ <div class="header">
+  <a class="logo" href="#">OUAGA <span>SHOES</span></a>
+  <nav>
+   <a href="#">Accueil</a>
+   <a href="#boutique">Boutique</a>
+   <a href="#promotions">Promotions</a>
+   <a href="#contact">Contact</a>
+  </nav>
+  <span class="header-note">L'élégance masculine à vos pieds</span>
+ </div>
+</header>
+
+<main>
+<section class="hero">
+ <div class="hero-content">
+  <div class="eyebrow">Collection homme</div>
+  <h1>L'ÉLÉGANCE<br>À CHAQUE PAS.</h1>
+  <p>Découvre des chaussures pour homme qui associent style, confort et caractère. Commande facilement sur WhatsApp et paie à la livraison.</p>
+  <a href="#boutique" class="btn btn-gold">DÉCOUVRIR LA COLLECTION →</a>
+ </div>
+</section>
+
+<div class="trust">
+ <div class="trust-item"><span class="trust-icon">✦</span><span>STYLE & QUALITÉ</span></div>
+ <div class="trust-item"><span class="trust-icon">✓</span><span>COMMANDE SUR WHATSAPP</span></div>
+ <div class="trust-item"><span class="trust-icon">▣</span><span>PAIEMENT À LA LIVRAISON</span></div>
+</div>
+
+<section class="section" id="boutique">
+ <div class="heading">
+  <div class="eyebrow">Notre sélection</div>
+  <h2>Choisis ta prochaine paire</h2>
+  <p>Un modèle te plaît ? Clique sur « Voir détails » ou « Commander » pour passer ta commande.</p>
+ </div>
+
+ <div class="filters">
+  <button class="chip active" data-category="Tout">Tout voir</button>
+  <button class="chip" data-category="Classique">Classiques</button>
+  <button class="chip" data-category="Sport">Sneakers</button>
+  <button class="chip" data-category="Décontracté">Décontractées</button>
+ </div>
+
+ <div class="catalog-tools">
+  <span id="productCount">Nos modèles</span>
+  <input class="search" id="search" type="search" placeholder="Rechercher une chaussure…">
+ </div>
+
+ <div class="products" id="products"></div>
+</section>
+
+<section class="promo" id="promotions">
+ <div class="promo-image" role="img" aria-label="Sneaker tendance"></div>
+ <div class="promo-text">
+  <div class="eyebrow">Ton style, ta signature</div>
+  <h2>Le bon choix pour chaque occasion.</h2>
+  <p>Du quotidien aux grandes occasions, trouve la paire qui correspond à ta personnalité. Sélectionne ton modèle et passe ta commande en quelques instants.</p>
+  <a href="#boutique" class="btn">VOIR LES CHAUSSURES</a>
+ </div>
+</section>
+
+<section class="delivery">
+ <div class="delivery-box">
+  <div style="font-size:28px">🚚</div>
+  <div>
+   <strong>Tu commandes aujourd'hui, tu paies à la livraison.</strong>
+   <p>Pas de paiement en ligne sur le site. Nous te contactons pour confirmer la disponibilité, le lieu et les frais de livraison.</p>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer id="contact">
+ <div class="footer-inner">
+  <div><a class="logo" href="#" style="color:#fff">OUAGA <span>SHOES</span></a><p>L'élégance masculine à vos pieds.<br>Ouagadougou, Burkina Faso.</p></div>
+  <div><h3>BOUTIQUE</h3><p><a href="#boutique">Tous les modèles</a><br><a href="#promotions">Promotions</a></p></div>
+  <div><h3>ASSISTANCE</h3><p><a href="https://wa.me/22657640087" target="_blank" rel="noopener">Nous contacter sur WhatsApp</a><br>Paiement à la livraison</p></div>
+ </div>
+ <div class="copyright">© <span id="year"></span> OUAGA SHOES. Tous droits réservés.</div>
+</footer>
+
+<a class="whatsapp-label" href="https://wa.me/22657640087?text=Bonjour%20OUAGA%20SHOES%2C%20j'ai%20besoin%20d'assistance." target="_blank" rel="noopener">Besoin d'aide ? Écris-nous</a>
+
+<a class="whatsapp-float" href="https://wa.me/22657640087?text=Bonjour%20OUAGA%20SHOES%2C%20j'ai%20besoin%20d'assistance." target="_blank" rel="noopener" aria-label="Assistance WhatsApp">
+ <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 .8A15 15 0 0 0 3.1 23.5L1 31l7.7-2A15.1 15.1 0 1 0 16 .8zm0 27.4a12.3 12.3 0 0 1-6.3-1.7l-.5-.3-4.6 1.2 1.2-4.5-.3-.5A12.3 12.3 0 1 1 16 28.2zm6.8-9.2c-.4-.2-2.1-1-2.5-1.1-.3-.1-.6-.2-.8.2-.3.4-.9 1.1-1.1 1.3-.2.3-.4.3-.8.1-.4-.2-1.5-.6-2.9-1.8-1.1-1-1.8-2.1-2-2.5-.2-.4 0-.6.2-.8l.6-.7c.2-.2.3-.4.4-.6.1-.3 0-.5 0-.7-.1-.2-.8-1.9-1.1-2.6-.3-.7-.6-.6-.8-.6h-.7c-.3 0-.7.1-1 .5-.4.4-1.3 1.2-1.3 3s1.3 3.5 1.5 3.7c.2.3 2.6 4 6.2 5.5.9.4 1.6.6 2.1.7.9.3 1.7.2 2.3.1.7-.1 2.1-.9 2.4-1.7.3-.8.3-1.5.2-1.7-.1-.1-.4-.2-.8-.4z"/></svg>
+</a>
+
+<!-- FENÊTRE VOIR DÉTAILS -->
+<div class="modal-bg" id="detailModal" aria-hidden="true">
+ <div class="modal">
+  <button class="modal-close" type="button" onclick="closeDetails()" aria-label="Fermer">×</button>
+  <div class="modal-grid">
+   <img id="detailImage" src="" alt="Détail de la chaussure">
+   <div class="order-form">
+    <div class="eyebrow">Détails du produit</div>
+    <h2 id="detailName">Nom du modèle</h2>
+    <p id="detailDescription" style="font-size:13px;color:#68766d;line-height:1.8"></p>
+    <div class="product-summary">
+     <strong>Prix</strong>
+     <strong id="detailPrice"></strong>
+    </div>
+    <p style="font-size:12px;color:#68766d">Paiement à la livraison. La disponibilité et les frais de livraison seront confirmés par WhatsApp.</p>
+    <button class="btn btn-green" id="detailOrderButton" type="button" style="width:100%">COMMANDER CE MODÈLE</button>
+   </div>
+  </div>
+ </div>
+</div>
+
+<!-- FENÊTRE COMMANDE -->
+<div class="modal-bg" id="orderModal" aria-hidden="true">
+ <div class="modal">
+  <button class="modal-close" type="button" onclick="closeOrder()" aria-label="Fermer">×</button>
+  <div class="modal-grid">
+   <img id="orderImage" src="" alt="Chaussure sélectionnée">
+   <form class="order-form" id="orderForm">
+    <div class="eyebrow">Commande WhatsApp</div>
+    <h2>Confirme ta commande</h2>
+    <p style="font-size:12px;color:#777;line-height:1.6">Remplis les informations ci-dessous. Ta commande sera préparée dans WhatsApp pour être envoyée à OUAGA SHOES.</p>
+    <div class="product-summary">
+     <strong id="orderProductName">Produit</strong>
+     <strong id="orderProductPrice">0 FCFA</strong>
+    </div>
+
+    <div class="field">
+     <label for="customerName">Nom complet *</label>
+     <input id="customerName" required autocomplete="name" placeholder="Ton nom complet">
+    </div>
+    <div class="field">
+     <label for="customerPhone">Numéro joignable *</label>
+     <input id="customerPhone" required type="tel" autocomplete="tel" placeholder="70 00 00 00">
+    </div>
+    <div class="field">
+     <label for="customerLocation">Ville / Quartier *</label>
+     <input id="customerLocation" required placeholder="Ex. Ouagadougou, Zone du Bois">
+    </div>
+
+    <div class="cod-note">
+     <strong>✓ Paiement à la livraison</strong><br>
+     Tu paieras lorsque tu recevras ta chaussure. Aucun paiement en ligne n'est demandé ici.
+    </div>
+    <div class="form-error" id="formError" aria-live="polite"></div>
+    <button class="btn btn-green" type="submit" style="width:100%">CONFIRMER LA COMMANDE PAR WHATSAPP</button>
+    <p style="font-size:10px;color:#888;line-height:1.5;margin-bottom:0">WhatsApp s'ouvrira avec ton message de commande prérempli. Vérifie-le puis appuie sur « Envoyer ».</p>
+   </form>
+  </div>
+ </div>
+</div>
+
+<script>
+/* Numéro WhatsApp : Burkina Faso +226 57640087 */
+const WHATSAPP_NUMBER = "22657640087";
+
+/* Produits de démonstration : remplace les photos, noms et prix par ton catalogue. */
+const productsData = [
+ {id:1,name:"Derby Premium",category:"Classique",price:25000,oldPrice:30000,badge:"BEST-SELLER",sizes:[39,40,41,42,43,44,45],image:"https://images.unsplash.com/photo-1614252369475-531eba835eb1?auto=format&fit=crop&w=900&q=85",description:"Une chaussure élégante pour le bureau et les grandes occasions."},
+ {id:2,name:"Loafers Élégance",category:"Classique",price:22000,oldPrice:null,badge:"NOUVEAU",sizes:[40,41,42,43,44,45],image:"https://images.unsplash.com/photo-1531310197839-ccf54634509e?auto=format&fit=crop&w=900&q=85",description:"Un mocassin raffiné et facile à porter."},
+ {id:3,name:"Sneakers Urban",category:"Sport",price:18000,oldPrice:22000,badge:"PROMO",sizes:[39,40,41,42,43,44,45,46],image:"https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=85",description:"Des sneakers modernes pour accompagner tes journées."},
+ {id:4,name:"Oxford Prestige",category:"Classique",price:30000,oldPrice:null,badge:"ÉLÉGANT",sizes:[40,41,42,43,44,45],image:"https://images.unsplash.com/photo-1614252235316-8c857d38b5f4?auto=format&fit=crop&w=900&q=85",description:"Une chaussure habillée et sophistiquée."},
+ {id:5,name:"Casual Street",category:"Décontracté",price:20000,oldPrice:null,badge:"TENDANCE",sizes:[39,40,41,42,43,44],image:"https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=900&q=85",description:"Une paire polyvalente pour tes sorties."},
+ {id:6,name:"Classic Brown",category:"Classique",price:27000,oldPrice:null,badge:"CLASSIQUE",sizes:[40,41,42,43,44,45],image:"https://images.unsplash.com/photo-1614252369475-531eba835eb1?auto=format&fit=crop&w=900&q=85",description:"Une chaussure marron facile à associer."},
+ {id:7,name:"Runner Active",category:"Sport",price:19000,oldPrice:null,badge:"CONFORT",sizes:[39,40,41,42,43,44,45,46],image:"https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=900&q=85",description:"Un modèle sportif pour un style dynamique."},
+ {id:8,name:"Mocassin Signature",category:"Décontracté",price:24000,oldPrice:null,badge:"SÉLECTION",sizes:[40,41,42,43,44,45],image:"https://images.unsplash.com/photo-1531310197839-ccf54634509e?auto=format&fit=crop&w=900&q=85",description:"Une touche soignée pour une tenue décontractée."}
+];
+
+let activeCategory="Tout";
+let selectedProduct=null;
+
+const money=n=>new Intl.NumberFormat("fr-FR").format(n)+" FCFA";
+
+function renderProducts(){
+ const query=document.getElementById("search").value.trim().toLowerCase();
+ const list=productsData.filter(p=>
+  (activeCategory==="Tout"||p.category===activeCategory)&&
+  p.name.toLowerCase().includes(query)
+ );
+
+ document.getElementById("productCount").textContent=list.length+" modèle(s) disponible(s)";
+
+ document.getElementById("products").innerHTML=list.map(p=>`
+  <article class="card">
+   <div class="photo">
+    <img src="${p.image}" alt="${p.name}" loading="lazy">
+    <span class="badge">${p.badge}</span>
+   </div>
+   <div class="info">
+    <div class="name">${p.name}</div>
+    <div class="category">${p.category} · Homme</div>
+    <div class="price-row">
+     <span class="price">${money(p.price)}</span>
+     ${p.oldPrice?`<span class="old">${money(p.oldPrice)}</span>`:""}
+    </div>
+    <div class="product-actions">
+     <button class="btn details-btn" type="button" onclick="openDetails(${p.id})">VOIR DÉTAILS</button>
+     <button class="btn btn-green buy-btn" type="button" onclick="openOrder(${p.id})">COMMANDER</button>
+    </div>
+    <div class="payment-note">Paiement à la livraison</div>
+   </div>
+  </article>
+ `).join("")||'<p style="grid-column:1/-1;text-align:center;color:#777">Aucun modèle trouvé.</p>';
+}
+
+document.querySelector(".filters").addEventListener("click",e=>{
+ const btn=e.target.closest("[data-category]");
+ if(!btn)return;
+ activeCategory=btn.dataset.category;
+ document.querySelectorAll(".chip").forEach(b=>b.classList.toggle("active",b===btn));
+ renderProducts();
+});
+
+document.getElementById("search").addEventListener("input",renderProducts);
+
+function openDetails(id){
+ const p=productsData.find(item=>item.id===id);
+ if(!p)return;
+
+ document.getElementById("detailImage").src=p.image;
+ document.getElementById("detailImage").alt=p.name;
+ document.getElementById("detailName").textContent=p.name;
+ document.getElementById("detailDescription").textContent=p.description;
+ document.getElementById("detailPrice").textContent=money(p.price);
+
+ document.getElementById("detailOrderButton").onclick=()=>{
+  closeDetails();
+  openOrder(p.id);
+ };
+
+ document.getElementById("detailModal").classList.add("show");
+ document.getElementById("detailModal").setAttribute("aria-hidden","false");
+ document.body.style.overflow="hidden";
+}
+
+function closeDetails(){
+ document.getElementById("detailModal").classList.remove("show");
+ document.getElementById("detailModal").setAttribute("aria-hidden","true");
+ document.body.style.overflow="";
+}
+
+document.getElementById("detailModal").addEventListener("click",e=>{
+ if(e.target.id==="detailModal")closeDetails();
+});
+
+function openOrder(id){
+ selectedProduct=productsData.find(p=>p.id===id);
+ if(!selectedProduct)return;
+
+ document.getElementById("orderImage").src=selectedProduct.image;
+ document.getElementById("orderImage").alt=selectedProduct.name;
+ document.getElementById("orderProductName").textContent=selectedProduct.name;
+ document.getElementById("orderProductPrice").textContent=money(selectedProduct.price);
+ document.getElementById("formError").textContent="";
+
+ document.getElementById("orderModal").classList.add("show");
+ document.getElementById("orderModal").setAttribute("aria-hidden","false");
+ document.body.style.overflow="hidden";
+}
+
+function closeOrder(){
+ document.getElementById("orderModal").classList.remove("show");
+ document.getElementById("orderModal").setAttribute("aria-hidden","true");
+ document.body.style.overflow="";
+}
+
+document.getElementById("orderModal").addEventListener("click",e=>{
+ if(e.target.id==="orderModal")closeOrder();
+});
+
+document.addEventListener("keydown",e=>{
+ if(e.key==="Escape"){
+  closeOrder();
+  closeDetails();
+ }
+});
+
+document.getElementById("orderForm").addEventListener("submit",e=>{
+ e.preventDefault();
+
+ const error=document.getElementById("formError");
+ const name=document.getElementById("customerName").value.trim();
+ const phone=document.getElementById("customerPhone").value.trim();
+ const location=document.getElementById("customerLocation").value.trim();
+
+ if(!name||!phone||!location){
+  error.textContent="Merci de remplir les trois champs obligatoires.";
+  return;
+ }
+
+ const p=selectedProduct;
+
+ const message=[
+  "🛍️ *NOUVELLE COMMANDE — OUAGA SHOES*",
+  "━━━━━━━━━━━━━━━━━━",
+  "👞 *ARTICLE COMMANDÉ*",
+  "• Modèle : "+p.name,
+  "• Catégorie : "+p.category,
+  "• Prix : "+money(p.price),
+  "━━━━━━━━━━━━━━━━━━",
+  "👤 *INFORMATIONS DU CLIENT*",
+  "• Nom : "+name,
+  "• Téléphone : "+phone,
+  "• Ville / Quartier : "+location,
+  "━━━━━━━━━━━━━━━━━━",
+  "💰 *TOTAL ARTICLE : "+money(p.price)+"*",
+  "💵 *PAIEMENT : À LA LIVRAISON*",
+  "🚚 Frais et délai de livraison à confirmer.",
+  "",
+  "Bonjour OUAGA SHOES, merci de confirmer la disponibilité de cet article et ma livraison.",
+  "Merci !"
+ ].join("\n");
+
+ const url="https://wa.me/"+WHATSAPP_NUMBER+"?text="+encodeURIComponent(message);
+ window.open(url,"_blank","noopener");
+ closeOrder();
+});
+
+document.getElementById("year").textContent=new Date().getFullYear();
+renderProducts();
+</script>
+</body>
+</html>
